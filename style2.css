@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Berkshire+Swash&family=Dancing+Script&family=Playpen+Sans:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,200&family=Smooch+Sans:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet');
 *{
     margin:0;
     padding: 0;
@@ -309,4 +310,53 @@ p {
 }
 .prod-container3{
     margin-top: 55px;
+}
+.svg-container {
+    width: 100%;
+    overflow: hidden;
+}
+.svg-container svg{
+    background-color:rgb(255, 218, 150);
+}
+
+  svg {
+    font-family: 'Russo One', sans-serif;
+    position: absolute; 
+    width: 100%;
+    height: 50%;
+    padding-top: 220px;
+   
+  }
+  
+  svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke:teal;
+    fill: var(--second-color); /* Add this line to set the fill color */
+    font-size:70px;
+}  
+  @keyframes stroke {
+    0%   {
+      fill: var(--second-color); stroke: teal;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: var(--second-color); stroke: teal(215,68,43); }
+    80%  {fill: var(--second-color); stroke: teal(215,68,43); stroke-width: 3; }
+    100% {
+      fill: var(--second-color); stroke:  teal(215,68,43); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+  }
+
+  .background-square {
+    position: absolute;
+    width: 45%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color: #f1d22c; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 50%; /* Adjust to center vertically */
+    left: 0%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
