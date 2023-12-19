@@ -349,14 +349,73 @@ p {
     }
   }
 
-  .background-square {
+.background-malta1 {
     position: absolute;
-    width: 45%; /* Adjust as needed */
+    width: 35%; /* Adjust as needed */
     height: 50%; /* Adjust as needed */
     background-color: #f1d22c; /* Set your desired background color */
     z-index: -1; /* Ensure it's positioned behind other elements */
     top: 50%; /* Adjust to center vertically */
-    left: 0%; /* Adjust to center horizontally */
+    left: 5%; /* Adjust to center horizontally */
     margin-top: 50px;
     margin-bottom: 50px;
+   
+}
+.background-malta1 img{
+    width: 95%;
+    height: 100%;
+    padding-right: 100px;
+    padding-top: 50px;
+    
+}
+ .background-malta2 img{
+    padding-top:475px ;
+    padding-right: 900px;
+    padding-left: 400px;
+
+}
+
+.background-aguaTonica1 {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#003c71; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 110%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-aguaTonica1 img {
+    width: 105%;
+    height: 53.5vh;
+    padding-right: 20px;
+    padding-left: 170px;
+    padding-top: 20px;
+}
+.background-aguaTonica2 img{
+    padding-top:335px ;
+    padding-right: 1195px;
+    padding-left: 85px;
+    
+}
+.background-aguacarbo1{
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#003c71; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 180%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-aguacarbo1 img {
+    width: 105%;
+    height: 53.5vh;
+    padding-right: 20px;
+    padding-left: 170px;
+    padding-top: 20px;
 }
