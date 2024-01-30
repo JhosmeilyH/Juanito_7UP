@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Juaniti_7UP/Juanito_7UP"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

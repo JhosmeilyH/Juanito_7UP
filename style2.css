@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Berkshire+Swash&family=Dancing+Script&family=Playpen+Sans:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,200&family=Smooch+Sans:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+:root{
+    --main-color:teal;
+    --second-color:rgb(174, 113, 56);
+}
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding-bottom: 1px;
+    padding-left: 5%;
+    padding-right:10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: right;
+}
+.logo img{
+    width:280px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1.3rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home {
+        padding-top: 10%;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 0.3; 
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        background-color: rgb(255, 218, 150);
+}
+.products {
+    margin-top: -175px;
+    padding-top: 15%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+
+}
+.aboutus {
+    margin-top: -110px; /* Adjust this value as needed */
+    padding: 15%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1px;
+
+}
+.contactus{
+    margin-top:-2px; /* Adjust this value as needed */
+}
+.home{
+    align-items: center;
+    background-color: rgb(255, 218, 150);
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+
+
+.home-img{
+    flex:  1 1 17rem;
+    padding: 150px 80px;
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+   
+}
+@keyframes animate {
+    0%{
+        transform: translate(-11px, 0);
+    }
+    50%{
+        transform: translate(-0px, -11px);
+    }
+    100%{
+        transform: translate(-11px, 0);
+    }
+}
+.home-text span{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--second-color);
+    font-weight: bolder;
+}
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--second-color);
+    font-weight: bolder;
+    
+}
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--second-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.home-text a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--main-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.beers:hover {
+    color:#fff;
+    background: var(--second-color);
+}
+.beers{
+    padding:7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 90px;
+    padding-top: 30px;
+}
+.heading span{
+    font-size: 40px;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.heading h1{
+    font-size: 40px;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.prod-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -175px;
+    padding-top: 300px;
+    
+}
+.prod-container .box {
+    flex: 1 1 10rem;
+    padding-top: -190px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    transform: translate(5%,5%);
+    padding-left: 100px;
+    padding-right:100px;
+    padding-bottom: -25px;
+
+}
+.prod-container .box .box-img img{
+    width:100%;
+    max-width: 500px;
+    height:140px;
+    margin: -100px;
+    object-fit: contain;
+    object-position: center;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.overlay{
+    position: relative;
+    top: -50%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    background:var(--main-color);
+    cursor:pointer;
+}
+.content .box-img {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    transform: translate(5%,5%);
+    color: white;
+    text-align: center;
+    
+}
+.content a{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+
+}
+.prod-container:hover .overlay{
+    opacity:0.8;
+}
+
+
+.google-map {
+    padding-bottom: 30%;
+    position: relative;
+}
+
+.google-map iframe {
+    padding-top: 50px;
+    height: 120%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-align: center;
+}
+.services {
+    height: 90px;
+    margin-top: 70px;
+    width: 1800px;
+    margin-left:-570px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50p;
+    width: 50%;
+
+}
+.heading2{
+    color: var(--second-color);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    border: 2px solid rgb(255, 218, 150);
+    padding: 10px;
+    border-radius: 80px 40px;
+
+}
+.container2{
+    border-color: var(--main-color);
+    border-style:inset;
+    border-radius: 30px;
+    border-width: 4px;
+    margin-top: 90px;
+    align-items: center;
+}
+
+
+.stars{
+    margin: 1rem 0 0.1rem;
+}
+.prod-container .box .stars .bx {
+    color: var(--second-color);
+}
+.prod-container3{
+    margin-top: 55px;
+}
+.svg-container {
+    width: 100%;
+    overflow: hidden;
+}
+.svg-container svg{
+    background-color:rgb(255, 218, 150);
+}
+
+  svg {
+    font-family: 'Russo One', sans-serif;
+    position: absolute; 
+    width: 100%;
+    height: 50%;
+    padding-top: 220px;
+   
+  }
+  
+  svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke:teal;
+    fill: var(--second-color); /* Add this line to set the fill color */
+    font-size:70px;
+}  
+  @keyframes stroke {
+    0%   {
+      fill: var(--second-color); stroke: teal;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: var(--second-color); stroke: teal(215,68,43); }
+    80%  {fill: var(--second-color); stroke: teal(215,68,43); stroke-width: 3; }
+    100% {
+      fill: var(--second-color); stroke:  teal(215,68,43); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+  }
+
+.background-malta1 {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color: #f1d22c; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 50%; /* Adjust to center vertically */
+    left: 5%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+.background-malta1 img{
+    width: 95%;
+    height: 100%;
+    padding-right: 100px;
+    padding-top: 50px;
+    
+}
+
+.background-aguaTonica1 {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#003c71; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 115%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-aguaTonica1 img {
+    width: 105%;
+    height: 53.5vh;
+    padding-right: 20px;
+    padding-left: 170px;
+    padding-top: 20px;
+}
+
+.background-aguacarbo1{
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#003c71; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 180%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-aguacarbo1 img {
+    width: 105%;
+    height: 53.5vh;
+    padding-right: 20px;
+    padding-left: 170px;
+    padding-top: 20px;
+}
+
+.Malta-text  {
+    flex: 1;
+    padding-top: 600px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.Malta-text h1{
+    text-align: left;
+    font-size: 70px;
+}
+.Malta-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.Agua-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.Agua-text h1{
+    text-align: left;
+    font-size: 70px;
+}
+.Agua-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.Carbo-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.Carbo-text h1{
+    text-align: left;
+    font-size: 60px;
+}
+.Carbo-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-vital{
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#710400; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 245%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.background-vital img {
+    width: 85%;
+    height: 53.5vh;
+    padding-right: 20px;
+    padding-left: 140px;
+    padding-top: 20px;
+}
+.vital-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.vital-text h1{
+    text-align: left;
+    font-size: 60px;
+}
+.vital-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-presidente{
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#4CBB17; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 50%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.background-presidente img {
+    width: 95%;
+    height: 60vh;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.presidente-text  {
+    flex: 1;
+    padding-top: 600px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.presidente-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.presidente-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-presidentelight {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#4CBB17; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 115%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-presidentelight img {
+    width: 100%;
+    height: 60vh;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 80px;
+}
+.presidentelight-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.presidentelight-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.presidentelight-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-bohemiaespecial  {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#0b6e4f; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 180%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-bohemiaespecial img {
+    width: 100%;
+    height: 55vh;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+.bohemiaespecial-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.bohemiaespecial-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.bohemiaespecial-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-bohemialight  {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#c99700; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 250%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-bohemialight img {
+    width: 75%;
+    height: 110%;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.bohemialight-text  {
+    flex: 1;
+    padding-top: 500px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.bohemialight-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.bohemialight-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-barceloblack  {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#7b3d00; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 50%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-barceloblack  img {
+    width: 88%;
+    height: 115%;
+    padding-right: 20px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.barceloblack-text  {
+    flex: 1;
+    padding-top: 550px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.barceloblack-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.barceloblack-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-barceloonyx  {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#7b3d00; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 115%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-barceloonyx  img {
+    width: 88%;
+    height: 115%;
+    padding-right: 20px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.barceloonyx-text  {
+    flex: 1;
+    padding-top: 350px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.barceloonyx-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.barceloonyx-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+.background-barcelorare   {
+    position: absolute;
+    width: 35%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color:#7b3d00; /* Set your desired background color */
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 180%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background-barcelorare  img {
+    width: 78%;
+    height: 115%;
+    padding-right: 20px;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+.barcelorare-text  {
+    flex: 1;
+    padding-top: 300px;
+    padding-left: 880px;
+    color: var(--main-color);
+}
+.barcelorare-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+.barcelorare-text h3{
+    left:-20px;
+    font-size: 20px;
+}
+
+.servicesbck {
+    position: absolute;
+    width: 82.5%; /* Adjust as needed */
+    height: 92%; /* Adjust as needed */
+    background-color:hsla(0, 0%, 96%, 0.467); /* Set your desired background color */
+    margin-left: 200px;
+    z-index: -1; /* Ensure it's positioned behind other elements */
+    top: 284.5%; /* Adjust to center vertically */
+    left: 5%;
+    bottom: 100%; /* Adjust to center horizontally */
+    margin-top: -50px;
+}
+.servicesbck img{
+    margin-top: -50px;
+}
+
+.contactus-text{
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+.contactus-text h1{
+    font-size: 50px;
+    padding-left:813px;
+    letter-spacing: 3px;
+    padding-top: 80px;
+}
+.contactus-text h2{
+    font-size: 50px;
+    padding-left:865px;
+    letter-spacing: 3px;
+}
+.contactus-text h3{
+    font-size: 30px;
+    padding-left:965px;
+    letter-spacing: 3px;
+}
+.contactus-text h4{
+    font-size: 19px;
+    padding-left:1007px;
+    letter-spacing: 3px;
+}
+.services{
+    margin-top: 20px;
+    height: -20px;
+}
